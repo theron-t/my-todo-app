@@ -76,9 +76,17 @@ form input{
   font-size: 1.6rem;
   letter-spacing: .06rem;
   font-weight: bold;
+  color: #555;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 form button {
+  margin-left:1rem;
   padding: .8rem 2.8rem;
   border-radius: .3rem;
   border: none;
@@ -87,12 +95,12 @@ form button {
   letter-spacing: 1.5px;
   font-size: 15px;
   transition: all .3s ease;
-  box-shadow: #68B984;
+  box-shadow: #60AB7A;
 }
 
 form button:active {
   background-color: #68B984;
-  box-shadow: #5cb87c;
+  box-shadow: #60AB7A;
   transform: translateY(5px);
   transition: 200ms;
 }
@@ -136,95 +144,41 @@ label{
   background-color: #D14D72;
   color: #FFF9F9;
   border:none;
+  border-radius: .3rem;
   display: inline-block;
   cursor: pointer;
   justify-self: center;
   letter-spacing: .1rem;
+}
+
+.main-task li button:active {
+  background-color: #D14D72;
+  box-shadow: #D14D72;
+  transform: translateY(5px);
+  transition: 300ms;
 }
 
 #deleteAll {
   padding: 10px 20px;
   border-radius: 10px;
+  margin-top: 1rem;
   border: 0;
-  width: 14rem;
-  background-color: #fff;
-  background-color: rgb(255, 56, 86);
+  width: 12rem;
+  background-color: #D14D72;
   letter-spacing: 1.5px;
-  font-size: 15px;
+  font-size: 1.5rem;
   transition: all .3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  box-shadow: #C2486A 0px 10px 0px 0px;
   color: hsl(0, 0%, 100%);
 }
 
 #deleteAll:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+  box-shadow: #C2486A 0px 7px 0px 0px;
 }
 
 #deleteAll:active {
-  background-color: rgb(255, 56, 86);
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  background-color: #D14D72;
+  box-shadow: #C2486A 0px 0px 0px 0px;
   transform: translateY(5px);
-  transition: 500ms;
+  transition: 300ms;
 }
-
-/*#deleteAll{
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 10px 20px;
-  width: 14rem;
-  background-color: #fff;
-  color: black;
-  border:transparent;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  display: inline-block;
-  cursor: pointer;
-  justify-self: center;
-  letter-spacing: .1rem;
-}*/
-
-/*
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-*/
